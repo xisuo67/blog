@@ -8,7 +8,7 @@ import SearchMetadata from '@theme/SearchMetadata'
 
 import Translate from '@docusaurus/Translate'
 import { Icon } from '@iconify/react'
-import { type ViewType, useViewType } from '@site/src/hooks/useViewType'
+import { useViewType, type ViewType } from '@site/src/hooks/useViewType'
 import BlogPostGridItems from '../BlogPostGridItems'
 
 import MyLayout from '../MyLayout'
@@ -67,7 +67,7 @@ function BlogListPageContent(props: Props) {
       <h2 className="h2 mb-4 flex items-center justify-center text-center">
         <Translate id="theme.blog.title.new">博客</Translate>
       </h2>
-      <p className="mb-4 text-center">代码人生：编织技术与生活的博客之旅</p>
+      <p className="mb-4 text-center">是非在己，毁誉由人，得失不论</p>
       <ViewTypeSwitch viewType={viewType} toggleViewType={toggleViewType} />
       <div className="row">
         <div className={'col col--12'}>

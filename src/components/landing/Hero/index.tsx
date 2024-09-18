@@ -1,8 +1,7 @@
-import { type Variants, motion } from 'framer-motion'
+import { motion, type Variants } from 'framer-motion'
 
 import Translate from '@docusaurus/Translate'
 
-import HeroSvg from './img/hero.svg'
 
 import SocialLinks from '@site/src/components/SocialLinks'
 import { MovingButton } from '../../magicui/moving-border'
@@ -51,7 +50,6 @@ function Name() {
       >
         <Translate id="homepage.hero.name">xisuo67</Translate>
       </span>
-      <span className="ml-1">👋</span>
     </motion.div>
   )
 }
@@ -63,7 +61,7 @@ export default function Hero() {
         <Name />
         <motion.p custom={2} initial="hidden" animate="visible" variants={variants} className="max-lg:px-4">
           <Translate id="homepage.hero.text">
-            在这里我会分享利用业余时间自己写的各类小工具，希望我的工具对你有所帮助。
+           在这里我会分享利用业余时间自己写的各类小工具，以及一些随手记下来的笔记，希望我的工具对你有所帮助。
           </Translate>
         </motion.p>
         <motion.div custom={3} initial="hidden" animate="visible" variants={variants}>
@@ -82,7 +80,8 @@ export default function Hero() {
         </motion.div>
       </div>
       <motion.div className={styles.background}>
-        <HeroSvg />
+        {/* <HeroSvg/> */}
+        <img src="/img/hunter.svg" width={600} height={880} />
         <Circle />
       </motion.div>
     </motion.div>

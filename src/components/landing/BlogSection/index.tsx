@@ -53,14 +53,14 @@ export default function BlogSection(): JSX.Element {
   }
 
   const posts = chunk(blogData.posts.slice(0, BLOG_POSTS_COUNT), BLOG_POSTS_PER_ROW)
-
+  
   const ref = React.useRef<HTMLDivElement>(null)
 
   const { scrollYProgress } = useScroll()
   const y = useTransform(scrollYProgress, [0, 0.5, 1], [20, 0, -20], {
     clamp: false,
   })
-
+  console.log(posts)
   if (blogData.postNum === 0) {
     return <>作者还没开始写博文哦...</>
   }
